@@ -21,7 +21,16 @@ public class World {
             for (int j = length; j > 0; j--) {
                 Tile tile = new Tile(i, j);
 
-                // randomly level of grass and
+                if (chance(0.5, random)) {
+                    // before placing we need to ensure that this place hasn't taken
+                    initTiles.
+                } else if (chance(0.10, random)) {
+
+                } else if (chance(0.15, random)) {
+
+                } else {
+
+                }
 
                 initTiles.add(tile);
             }
@@ -30,6 +39,8 @@ public class World {
         this.tiles = initTiles;
     }
 
+    public void
+
     public void render() {
         // clear current console
     }
@@ -37,5 +48,9 @@ public class World {
     public void tick() {
         // randomized actions
         //
+    }
+
+    public boolean chance(double probability, Random random) {
+        return random.nextDouble() < probability;
     }
 }

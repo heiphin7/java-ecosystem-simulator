@@ -2,10 +2,14 @@ package org.example;
 
 import org.example.entities.World;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
+        Random random = new Random();
+
         // init world
-        World world = new World(200, 200);
+        World world = new World(200, 200, random);
 
         // calculate amount of entities
         // randomize position of entities (with types)
