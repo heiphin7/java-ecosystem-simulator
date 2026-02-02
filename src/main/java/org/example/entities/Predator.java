@@ -5,10 +5,11 @@ public class Predator extends Entity {
     int targetX;
     int targetY;
 
-    public Predator(int x, int y) {
+    public Predator(int x, int y, int energy) {
         super();
         this.x=x;
         this.y=y;
+        this.energy = energy;
 
         this.targetX=-1;
         this.targetY=-1;

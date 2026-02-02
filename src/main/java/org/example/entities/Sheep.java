@@ -11,12 +11,17 @@ public class Sheep extends Entity {
     int targetX;
     int targetY;
 
-    public Sheep(int x, int y) {
+    public Sheep(int x, int y, int energy) {
         super();
         this.x=x;
         this.y=y;
+        this.energy = energy;
+
+        this.targetX=-1;
+        this.targetY=-1;
     }
 
+    // TODO: SET TARGET, FIND TARGET, OR ESCAPE FROM PREDATOR
     public void setTarget() {
 
     }
