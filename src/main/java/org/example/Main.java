@@ -9,21 +9,22 @@ public class Main {
         Random random = new Random();
 
         // init world
-        World world = new World(200, 200, random);
+        World world = new World(50, 20, random);
 
         // calculate amount of entities
         // randomize position of entities (with types)
 
-        world.seeObjects();
+        world.render();
 
-        boolean isRunning = true;
-
+//        boolean isRunning = true;
+//
 //        while (isRunning) {
 //            // actions
 //            // make a "tick" function that performs random actions with entities or grass
 //            // render world into console
 //            // thread.sleep (for better animation)
 //
+//            world.render();
 //        }
     }
 }

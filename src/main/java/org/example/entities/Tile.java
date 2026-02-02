@@ -41,4 +41,8 @@ public class Tile {
     public List<?> getEntities() {
         return this.entities;
     }
+
+    public Integer getGrassAmount() {
+        return this.grassAmount;
+    }
 }
